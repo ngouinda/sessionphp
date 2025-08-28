@@ -1,0 +1,41 @@
+# SessionPHP
+
+Ce projet démontre l'utilisation des sessions en PHP avec XAMPP.
+
+## Prérequis
+
+- PHP installé (recommandé via XAMPP)
+- Serveur Apache en fonctionnement
+
+## Installation
+
+1. Clonez ou copiez ce projet dans le dossier `htdocs` de XAMPP.
+2. Démarrez Apache via le panneau de contrôle XAMPP.
+
+
+## Fonctionnalités
+
+- Gestion des sessions utilisateur en PHP
+- Exemple de connexion/déconnexion
+- Stockage et affichage de données de session
+
+## Structure du projet
+
+- `index.php` : Page principale
+- `login.php` : Formulaire de connexion
+- `logout.php` : Déconnexion de la session
+- `README` : Ce fichier d'explication
+
+## Utilisation
+
+1. Ouvrez `index.php` pour voir l'état de la session.
+2. Utilisez `login.php` pour démarrer une session.
+3. Utilisez `logout.php` pour terminer la session.
+
+## Auteurs
+
+- AIME NGOUINDA
+
+## Licence
+
+Ce projet est open-source et libre d'utilisation.
