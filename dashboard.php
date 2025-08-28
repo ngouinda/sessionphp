@@ -22,7 +22,7 @@
                         <a class="nav-link" href="#">Profil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Déconnexion</a>
+                        <a class="nav-link" href="?logout=true">Déconnexion</a>
                     </li>
                 </ul>
             </div>
@@ -38,6 +38,13 @@
            echo "<p>Welcome, " . htmlspecialchars($userFromSession->getEmail()) . "!</p>";
         }
         else {
+            header('Location: connexion.php');
+            exit();
+        }
+
+        // deconnexion
+        if (isset($_GET['logout'])) {
+            SessionManager::destroySession();
             header('Location: connexion.php');
             exit();
         }
